@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(ssh:*)",
+      "Bash(scp:*)",
+      "Bash(docker restart:*)",
+      "Bash(systemctl restart:*)",
+      "Read(./.env)",
+      "Read(./config.yaml)"
+    ],
+    "allow": [
+      "Bash(uv run pytest:*)",
+      "Bash(uv run ruff:*)",
+      "Bash(uv sync:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)"
+    ]
+  }
+}
